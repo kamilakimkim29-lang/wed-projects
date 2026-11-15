@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Glow Beauty — косметика и сияние</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+<div class="links"><a href="#shop">Каталог</a><a href="#shade">Оттенок</a><a href="#boutique">Бутик</a></div>
+<a class="logo" href="#">Glow</a>
+<button class="bag" id="bag">Корзина · 0</button>
+</header>
+<div class="hero">
+<div class="badge"><i>New<br>2026</i></div>
+<div class="in">
+<div class="kicker">Glow Beauty · бьюти-бутик</div>
+<h1>Glow<br><span>Beauty</span></h1>
+<p>Сияющая кожа, шелковистые румяна и кушоны, от которых невозможно оторвать взгляд. Ваш ритуал красоты начинается здесь.</p>
+<a class="btn" href="#shop">Смотреть коллекцию</a><a class="btn ghost" href="#shade">Подобрать оттенок</a>
+</div>
+</div>
+<div class="wrap">
+<section id="ritual"><div class="eyebrow">Ритуал красоты</div><h2>Три шага к <em>сиянию</em></h2>
+<div class="ritual">
+<div class="step"><div class="n">01</div><img src="images/found-b.jpg" alt=""><h3>Основа</h3><p>Лёгкое тональное покрытие выравнивает тон и держится целый день.</p></div>
+<div class="step"><div class="n">02</div><img src="images/cush-top.jpg" alt=""><h3>Сияние</h3><p>Кушон с перламутровым финишем придаёт коже свежесть и объём.</p></div>
+<div class="step"><div class="n">03</div><img src="images/blush.jpg" alt=""><h3>Румянец</h3><p>Шелковистые румяна завершают образ нежным цветом.</p></div>
+</div></section>
+<section id="shop"><div class="eyebrow">Коллекция</div><h2>Любимое <em>красоты</em></h2>
+<div class="masonry">
+<figure class="pc"><img src="images/cush-pink.jpg" alt="Кушон Pearl Glow" loading="lazy"><figcaption class="cap"><div><h3>Кушон Pearl Glow</h3><small>Сияющее покрытие · $58</small></div><div class="acts"><button class="heart" aria-label="В избранное">♡</button><button class="add" aria-label="В корзину">+</button></div></figcaption></figure>
+<figure class="pc"><img src="images/blush.jpg" alt="Румяна Velvet Rose" loading="lazy"><figcaption class="cap"><div><h3>Румяна Velvet Rose</h3><small>Шёлковый румянец · $42</small></div><div class="acts"><button class="heart" aria-label="В избранное">♡</button><button class="add" aria-label="В корзину">+</button></div></figcaption></figure>
+<figure class="pc"><img src="images/cush-red.jpg" alt="Кушон Bordeaux" loading="lazy"><figcaption class="cap"><div><h3>Кушон Bordeaux</h3><small>Лимитированный оттенок · $64</small></div><div class="acts"><button class="heart" aria-label="В избранное">♡</button><button class="add" aria-label="В корзину">+</button></div></figcaption></figure>
+<figure class="pc"><img src="images/candy.jpg" alt="Бальзам Candy Glow" loading="lazy"><figcaption class="cap"><div><h3>Бальзам Candy Glow</h3><small>Тинт для губ · $34</small></div><div class="acts"><button class="heart" aria-label="В избранное">♡</button><button class="add" aria-label="В корзину">+</button></div></figcaption></figure>
+<figure class="pc"><img src="images/foundation.jpg" alt="Тональная основа All Day" loading="lazy"><figcaption class="cap"><div><h3>Тональная основа All Day</h3><small>24 часа, 30 оттенков · $56</small></div><div class="acts"><button class="heart" aria-label="В избранное">♡</button><button class="add" aria-label="В корзину">+</button></div></figcaption></figure>
+<figure class="pc"><img src="images/hearts.jpg" alt="Помада Satin Heart" loading="lazy"><figcaption class="cap"><div><h3>Помада Satin Heart</h3><small>Атласный финиш · $38</small></div><div class="acts"><button class="heart" aria-label="В избранное">♡</button><button class="add" aria-label="В корзину">+</button></div></figcaption></figure>
+<figure class="pc"><img src="images/bronzer.jpg" alt="Бронзер Sun Kiss" loading="lazy"><figcaption class="cap"><div><h3>Бронзер Sun Kiss</h3><small>Тёплое сияние · $46</small></div><div class="acts"><button class="heart" aria-label="В избранное">♡</button><button class="add" aria-label="В корзину">+</button></div></figcaption></figure>
+<figure class="pc"><img src="images/trio.jpg" alt="Хайлайтер Trio" loading="lazy"><figcaption class="cap"><div><h3>Хайлайтер Trio</h3><small>3 оттенка света · $52</small></div><div class="acts"><button class="heart" aria-label="В избранное">♡</button><button class="add" aria-label="В корзину">+</button></div></figcaption></figure>
+</div></section>
+<section id="shade"><div class="shade">
+<div class="orb" id="orb" style="--tone:#e8b898"></div>
+<div><div class="eyebrow">Подбор оттенка</div><h2 style="font-size:clamp(32px,6vw,52px);margin-bottom:18px">Найдите свой <em>тон</em></h2>
+<div class="swatches" id="sw"></div>
+<h3 id="shName">Sand</h3><p id="shDesc"></p>
+<a class="btn" href="#shop" style="margin-top:20px">Смотреть продукты</a></div>
+</div></section>
+</div>
+<div class="boutique" id="boutique"><div class="glass"><div class="eyebrow">Бутик</div><h2>Загляните <em>к нам</em></h2><p>г. Бишкек, ул. Примерная, 10</p><p>Ежедневно 10:00–21:00</p><p>+996 000 000 000</p></div></div>
+<div class="wrap">
+<section><div class="quotes">
+<blockquote>«Кушон Pearl Glow дарит коже сияние, как будто я только что вернулась с моря.»<cite>Айгерим, постоянный клиент</cite></blockquote>
+<blockquote>«Помогли подобрать идеальный тон за пять минут. Румяна просто мечта!»<cite>Диана, 28 лет</cite></blockquote>
+<blockquote>«Самый красивый магазин: хочется остаться там на весь день.»<cite>Мадина, блогер</cite></blockquote>
+<div class="dots"><i></i><i></i><i></i></div></div></section>
+<section class="news"><div class="eyebrow">Рассылка</div><h2>Подарок на <em>первый заказ</em></h2>
+<form id="nf"><input type="email" required placeholder="Ваш e-mail"><button class="btn" type="submit">Хочу</button></form><div class="msg" id="nm"></div></section>
+</div>
+<footer>© 2026 Glow Beauty · hello@glow.example · @glowbeauty</footer>
+<script src="script.js"></script>
+</body>
+</html>

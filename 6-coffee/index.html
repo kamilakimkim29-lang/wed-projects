@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Миндаль — кофейня</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header container">
+    <a href="#" class="logo"><span class="logo-mark">М</span>индаль</a>
+    <nav class="nav">
+      <a href="#home">Главная</a>
+      <a href="#categories">Меню</a>
+      <a href="#special">Хиты</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#services">Услуги</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="Поиск" id="searchBtn">🔍</button>
+      <button class="icon-btn cart" aria-label="Корзина">🛍️<span class="cart-count" id="cartCount">0</span></button>
+      <a href="#contacts" class="btn btn-primary btn-sm">📞 Связаться</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero container" id="home">
+    <div class="hero-text">
+      <h1>Окунитесь в мир <span class="accent">вкусного кофе</span></h1>
+      <p>Каждая чашка — история мастерства: свежая обжарка, хрустящие круассаны и тёплая атмосфера в сердце Камчатки.</p>
+      <div class="hero-buttons">
+        <a href="#special" class="btn btn-primary">Заказать</a>
+        <a href="#services" class="watch">Смотреть видео <span class="play">▶</span></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-circle"><img src="images/bakery.jpg" alt="Витрина с выпечкой в кофейне"></div>
+      <span class="float-emoji e1">🥐</span>
+      <span class="float-emoji e2">🫘</span>
+      <div class="badge-tag">Свежая обжарка 🔥</div>
+      <div class="mini-card m1"><span class="mini-ico"><img src="images/pecanbon.jpg" alt=""></span><div><b>Пеканбон</b><div class="stars">★★★★★</div><span>260 ₽</span></div></div>
+      <div class="mini-card m2"><span class="mini-ico"><img src="images/matcha.jpg" alt=""></span><div><b>Матча-тыква</b><div class="stars">★★★★☆</div><span>470 ₽</span></div></div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section container center" id="categories">
+    <p class="eyebrow">Любимое гостями</p>
+    <h2>Популярные категории</h2>
+    <div class="cat-grid">
+      <article class="cat-card"><div class="cat-ico"><img src="images/caramel.jpg" alt="Холодный кофе"></div><h3>Холодный кофе</h3><p>(9 напитков)</p></article>
+      <article class="cat-card"><div class="cat-ico"><img src="images/pear.jpg" alt="Выпечка"></div><h3>Выпечка</h3><p>(18 позиций)</p></article>
+      <article class="cat-card"><div class="cat-ico"><img src="images/paris.jpg" alt="Десерты"></div><h3>Десерты</h3><p>(9 десертов)</p></article>
+      <article class="cat-card"><div class="cat-ico"><img src="images/poppy.jpg" alt="Булочки"></div><h3>Булочки</h3><p>(12 видов)</p></article>
+    </div>
+  </section>
+
+  <!-- SPECIAL -->
+  <section class="section container" id="special">
+    <div class="special-head">
+      <div>
+        <p class="eyebrow">Хиты меню</p>
+        <h2>Лучшее из нашего меню</h2>
+      </div>
+      <div class="arrows">
+        <button class="arrow" id="prev" aria-label="Назад">‹</button>
+        <button class="arrow active" id="next" aria-label="Вперёд">›</button>
+      </div>
+    </div>
+
+    <div class="slider" id="slider">
+      <article class="dish">
+        <button class="heart" aria-label="В избранное">♥</button>
+        <div class="dish-img"><img src="images/pear.jpg" alt="Булочка с грушей"></div>
+        <h3>Булочка с грушей</h3>
+        <p>Слоёное тесто, дольки груши, сливочное место</p>
+        <div class="dish-foot"><span class="price"><sup>₽</sup>220</span><span class="rate">★ 4.8</span><button class="add" data-price="220" aria-label="В корзину">+</button></div>
+      </article>
+      <article class="dish">
+        <button class="heart" aria-label="В избранное">♥</button>
+        <div class="dish-img"><img src="images/pecanbon.jpg" alt="Пеканбон"></div>
+        <h3>Пеканбон</h3>
+        <p>Корица, тростниковый сахар, сливки, карамель, орехи пекан</p>
+        <div class="dish-foot"><span class="price"><sup>₽</sup>260</span><span class="rate">★ 4.9</span><button class="add" data-price="260" aria-label="В корзину">+</button></div>
+      </article>
+      <article class="dish">
+        <button class="heart" aria-label="В избранное">♥</button>
+        <div class="dish-img"><img src="images/paris.jpg" alt="Пари-брест вишня"></div>
+        <h3>Пари-брест вишня</h3>
+        <p>Заварное тесто, сметанный крем, ягодная начинка с вишней</p>
+        <div class="dish-foot"><span class="price"><sup>₽</sup>280</span><span class="rate">★ 4.8</span><button class="add" data-price="280" aria-label="В корзину">+</button></div>
+      </article>
+      <article class="dish">
+        <button class="heart" aria-label="В избранное">♥</button>
+        <div class="dish-img"><img src="images/poppy.jpg" alt="Маковая булочка"></div>
+        <h3>Маковая булочка</h3>
+        <p>Мука, мак, молоко, яйцо, сахар. 313 ккал</p>
+        <div class="dish-foot"><span class="price"><sup>₽</sup>180</span><span class="rate">★ 4.7</span><button class="add" data-price="180" aria-label="В корзину">+</button></div>
+      </article>
+      <article class="dish">
+        <button class="heart" aria-label="В избранное">♥</button>
+        <div class="dish-img"><img src="images/apricot.jpg" alt="Булочка с абрикосом"></div>
+        <h3>Булочка с абрикосом</h3>
+        <p>Слоёное тесто, абрикос, крем патисьер</p>
+        <div class="dish-foot"><span class="price"><sup>₽</sup>230</span><span class="rate">★ 4.7</span><button class="add" data-price="230" aria-label="В корзину">+</button></div>
+      </article>
+      <article class="dish">
+        <button class="heart" aria-label="В избранное">♥</button>
+        <div class="dish-img"><img src="images/zebra.jpg" alt="Айс зебра латте"></div>
+        <h3>Айс зебра латте</h3>
+        <p>Холодный латте со сливками и шоколадной крошкой</p>
+        <div class="dish-foot"><span class="price"><sup>₽</sup>250</span><span class="rate">★ 4.6</span><button class="add" data-price="250" aria-label="В корзину">+</button></div>
+      </article>
+      <article class="dish">
+        <button class="heart" aria-label="В избранное">♥</button>
+        <div class="dish-img"><img src="images/pumpkin.jpg" alt="Тыквенный латте с мёдом"></div>
+        <h3>Тыквенный латте с мёдом</h3>
+        <p>Айс-латте с пряной тыквой и мёдом</p>
+        <div class="dish-foot"><span class="price"><sup>₽</sup>290</span><span class="rate">★ 4.7</span><button class="add" data-price="290" aria-label="В корзину">+</button></div>
+      </article>
+      <article class="dish">
+        <button class="heart" aria-label="В избранное">♥</button>
+        <div class="dish-img"><img src="images/caramel.jpg" alt="Карамельный айс-латте"></div>
+        <h3>Карамельный айс-латте</h3>
+        <p>Молоко, эспрессо и карамель со сливками</p>
+        <div class="dish-foot"><span class="price"><sup>₽</sup>390</span><span class="rate">★ 4.9</span><button class="add" data-price="390" aria-label="В корзину">+</button></div>
+      </article>
+      <article class="dish">
+        <button class="heart" aria-label="В избранное">♥</button>
+        <div class="dish-img"><img src="images/kabocha.jpg" alt="Шоколадный кабоча"></div>
+        <h3>Шоколадный кабоча</h3>
+        <p>Холодный шоколадный кофе со взбитыми сливками</p>
+        <div class="dish-foot"><span class="price"><sup>₽</sup>430</span><span class="rate">★ 4.8</span><button class="add" data-price="430" aria-label="В корзину">+</button></div>
+      </article>
+      <article class="dish">
+        <button class="heart" aria-label="В избранное">♥</button>
+        <div class="dish-img"><img src="images/matcha.jpg" alt="Матча-тыква"></div>
+        <h3>Матча-тыква</h3>
+        <p>Матча, тыква и эспрессо на льду</p>
+        <div class="dish-foot"><span class="price"><sup>₽</sup>470</span><span class="rate">★ 4.6</span><button class="add" data-price="470" aria-label="В корзину">+</button></div>
+      </article>
+      <article class="dish">
+        <button class="heart" aria-label="В избранное">♥</button>
+        <div class="dish-img"><img src="images/espresso.jpg" alt="Эспрессо с солёной пенкой"></div>
+        <h3>Эспрессо с солёной пенкой</h3>
+        <p>Айс-эспрессо и сырная солёная пенка</p>
+        <div class="dish-foot"><span class="price"><sup>₽</sup>250</span><span class="rate">★ 4.7</span><button class="add" data-price="250" aria-label="В корзину">+</button></div>
+      </article>
+      <article class="dish">
+        <button class="heart" aria-label="В избранное">♥</button>
+        <div class="dish-img"><img src="images/rosemary.jpg" alt="Латте с ягодами"></div>
+        <h3>Латте с ягодами</h3>
+        <p>Ягодный латте со сливками и клубникой</p>
+        <div class="dish-foot"><span class="price"><sup>₽</sup>290</span><span class="rate">★ 4.5</span><button class="add" data-price="290" aria-label="В корзину">+</button></div>
+      </article>
+      <article class="dish">
+        <button class="heart" aria-label="В избранное">♥</button>
+        <div class="dish-img"><img src="images/boba.jpg" alt="Бабл-кофе с орео"></div>
+        <h3>Бабл-кофе с орео</h3>
+        <p>Кофе, крем с орео и ягодные шарики</p>
+        <div class="dish-foot"><span class="price"><sup>₽</sup>330</span><span class="rate">★ 4.6</span><button class="add" data-price="330" aria-label="В корзину">+</button></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CHEF + TESTIMONIALS -->
+  <section class="section container split" id="reviews">
+    <div class="chef">
+      <div class="chef-frame"><img src="images/hall.jpg" alt="Уютный зал кофейни"></div>
+      <div class="badge-tag chef-tag">Наш уютный зал ☕</div>
+    </div>
+    <div>
+      <p class="eyebrow">Отзывы</p>
+      <h2>Что говорят о нас гости</h2>
+      <p class="quote">«Заглянули на кофе, а остались на ужин. Круассаны — лучшие в городе, а детская комната спасла выходной!»</p>
+      <div class="feedback">
+        <div class="avatars"><span>👩</span><span>👨</span><span>👧</span></div>
+        <div><b>Отзывы гостей</b><div class="rating"><span class="star">★</span> 4.9 <span class="muted">(1,8 тыс. отзывов)</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section container" id="services">
+    <p class="eyebrow dark">О нас и услуги</p>
+    <h2>Наш путь и сервис</h2>
+    <p class="lead">Мы вкладываем душу в каждую чашку и создаём тёплое место для встреч, работы и семейных завтраков.</p>
+    <a href="#contacts" class="btn btn-primary">Подробнее</a>
+
+    <div class="service-grid">
+      <article class="service"><div class="s-ico">🎉</div><h4>Кейтеринг</h4><p>Угостим ваших гостей вкусной едой и красивой подачей</p></article>
+      <article class="service"><div class="s-ico">🛵</div><h4>Быстрая доставка</h4><p>Привезём заказ горячим прямо до двери</p></article>
+      <article class="service"><div class="s-ico">🛒</div><h4>Онлайн-заказ</h4><p>Выбирайте из меню и заказывайте в пару касаний</p></article>
+      <article class="service"><div class="s-ico">🎁</div><h4>Подарочные карты</h4><p>Подарите близким вкусный вечер в «Миндале»</p></article>
+      <article class="service"><div class="s-ico">🧸</div><h4>Детская комната</h4><p>Пока взрослые пьют кофе, дети играют рядом</p></article>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contacts">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <a href="#" class="logo"><span class="logo-mark">М</span>индаль</a>
+        <p>Наслаждайтесь вкусом, где каждая чашка — маленькое искусство</p>
+      </div>
+      <div>
+        <h5>Полезные ссылки</h5>
+        <a href="#">О нас</a><a href="#">События</a><a href="#">Блог</a><a href="#">Вопросы</a>
+      </div>
+      <div>
+        <h5>Меню сайта</h5>
+        <a href="#home">Главная</a><a href="#special">Акции</a><a href="#categories">Меню</a><a href="#">Бронь стола</a>
+      </div>
+      <div>
+        <h5>Контакты</h5>
+        <a href="https://wa.me/79024616333">+7 902 461-63-33</a>
+        <a href="#">ул. Ленинская, 59</a>
+        <a href="#">Ежедневно 08:00–22:00</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div class="socials"><a href="#">f</a><a href="#">ig</a><a href="#">t</a><a href="#">▶</a></div>
+      <p>© 2026 Миндаль | Все права защищены</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

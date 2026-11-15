@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sneaker Store — кроссовки</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="logo" href="#"><b>S</b> Sneaker</a>
+<nav><a href="#cat">Категории</a><a href="#shop">Новинки</a><a href="#look">Детали</a><a href="#reviews">Отзывы</a></nav>
+<button class="btn sm" id="cart">🛍 0 · $0</button>
+</header>
+<div class="hero">
+<div>
+<div class="eyebrow">Новая коллекция</div>
+<h1>Твой <em>розовый</em> шаг</h1>
+<p>Редкие пары, платформа и лимитированные релизы в нежных оттенках. Оригинальные кроссовки с доставкой по городу.</p>
+<div class="cta"><a class="btn" href="#shop">Смотреть новинки</a><a class="t" href="#look">Детали ▸</a></div>
+</div>
+<div class="pics"><img class="main" src="images/butterfly.jpg" alt="Кроссовки на платформе с бабочками" style="object-position:50% 45%"><img class="small" src="images/deer.jpg" alt="Кроссовки в коробке"><div class="sticker">NEW<br>DROP</div></div>
+</div>
+</div>
+<div class="strip"><div>NEW DROP ✦ PINK ✦ LIMITED ✦ PLATFORM ✦ STREET ✦ NEW DROP ✦ PINK ✦ LIMITED ✦ PLATFORM ✦ STREET ✦ NEW DROP ✦ PINK ✦ LIMITED ✦ PLATFORM ✦ STREET ✦ NEW DROP ✦ PINK ✦ LIMITED ✦ PLATFORM ✦ STREET ✦ </div></div>
+<div class="wrap">
+<section id="cat" class="center"><div class="eyebrow">Выбирай стиль</div><h2>Популярные категории</h2>
+<div class="cats">
+<div class="cat"><img src="images/d-deer.jpg" alt=""><h3>Классика</h3><small>42 модели</small></div>
+<div class="cat"><img src="images/d-butterfly.jpg" alt=""><h3>Платформа</h3><small>18 моделей</small></div>
+<div class="cat"><img src="images/d-jordan.jpg" alt=""><h3>Хай-топы</h3><small>26 моделей</small></div>
+<div class="cat"><img src="images/d-lace.jpg" alt=""><h3>Лимитированные</h3><small>12 пар</small></div>
+</div></section>
+<section id="shop"><div class="head"><div><div class="eyebrow">Хиты</div><h2>Новинки <em>магазина</em></h2></div>
+<div class="arrows"><button id="prev" aria-label="Назад">‹</button><button id="next" aria-label="Вперёд">›</button></div></div>
+<div class="track" id="track">
+<div class="card"><span class="badge">ХИТ</span><img src="images/deer.jpg" alt="Оленёнок" style="object-position:50% 62%" loading="lazy"><h3>Оленёнок</h3><p>Пятнистый мех, розовые шнурки</p><div class="sizes"><button>36</button><button>37</button><button class="on">38</button><button>39</button><button>40</button></div><div class="pr"><div><sup>$</sup>149</div><button class="add" data-price="149">В корзину</button></div></div>
+<div class="card"><span class="badge">NEW</span><img src="images/lace.jpg" alt="Кружево" style="object-position:40% 38%" loading="lazy"><h3>Кружево</h3><p>Атлас и кружево, пудровый</p><div class="sizes"><button>36</button><button>37</button><button class="on">38</button><button>39</button><button>40</button></div><div class="pr"><div><sup>$</sup>139</div><button class="add" data-price="139">В корзину</button></div></div>
+<div class="card"><span class="badge">ЛИМИТ</span><img src="images/butterfly.jpg" alt="Бабочка" style="object-position:50% 50%" loading="lazy"><h3>Бабочка</h3><p>Платформа, шармы</p><div class="sizes"><button>36</button><button>37</button><button class="on">38</button><button>39</button><button>40</button></div><div class="pr"><div><sup>$</sup>189</div><button class="add" data-price="189">В корзину</button></div></div>
+<div class="card"><span class="badge">ХИТ</span><img src="images/jordan.jpg" alt="Розовый хай-топ" style="object-position:50% 55%" loading="lazy"><h3>Розовый хай-топ</h3><p>Кремовые шнурки</p><div class="sizes"><button>36</button><button>37</button><button class="on">38</button><button>39</button><button>40</button></div><div class="pr"><div><sup>$</sup>169</div><button class="add" data-price="169">В корзину</button></div></div>
+</div></section>
+<section id="look"><div class="eyebrow">Крупным планом</div><h2>Детали, за которые <em>любят</em></h2>
+<div class="looks">
+<figure class="look"><img src="images/d-deer.jpg" alt=""><figcaption>Мех и розовая шнуровка</figcaption></figure>
+<figure class="look"><img src="images/d-lace.jpg" alt=""><figcaption>Атлас с кружевом</figcaption></figure>
+<figure class="look"><img src="images/d-butterfly.jpg" alt=""><figcaption>Шармы-бабочки</figcaption></figure>
+<figure class="look"><img src="images/d-jordan.jpg" alt=""><figcaption>Кремовые шнурки</figcaption></figure>
+</div></section>
+<section><div class="band"><h2>Нас выбирают сникерхеды</h2>
+<div class="nums"><div><b>8K</b><span>Пар продано</span></div><div><b>300+</b><span>Моделей</span></div><div><b>100%</b><span>Оригинал</span></div><div><b>4.9</b><span>Рейтинг</span></div></div></div></section>
+<section id="reviews" class="center"><div class="eyebrow">Отзывы</div><h2>Что говорят клиенты</h2>
+<div class="quote"><p>«Взяла розовые на платформе: пришли быстро, в коробке, выглядят ещё лучше, чем на фото!»</p><b>★ 4.9</b> (5.1k отзывов)</div></section>
+</div>
+<footer>© 2026 Sneaker Store · +996 000 000 000 · hello@sneaker.example</footer>
+<script src="script.js"></script>
+</body>
+</html>

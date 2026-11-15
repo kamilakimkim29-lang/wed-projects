@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Electronic X — магазин электроники</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="logo" href="#">ELECTRONIC <b>X</b></a>
+<input class="search" id="q" type="search" placeholder="Поиск товаров…" aria-label="Поиск">
+<button class="cartb" id="cart">Корзина · 0</button>
+</div></header>
+<main class="wrap">
+<div class="bento">
+<div class="tile t-main"><img class="bg" src="images/store.jpg" alt="" style="opacity:.28;object-position:50% 30%"><div class="ov" style="background:linear-gradient(135deg,rgba(15,42,122,.75),rgba(5,7,13,.6))"></div>
+<h1>Техника, <span>которую хочется</span></h1><p>Смартфоны, ноутбуки, аудио и гаджеты в одном месте. Оригинал, гарантия и рассрочка 0%.</p>
+<div><a class="btn" href="#catalog">В каталог</a><a class="btn o" href="#credit">Рассрочка</a></div></div>
+<div class="tile t-photo"><img class="bg" src="images/phones.jpg" alt="Смартфоны"><div class="ov"></div><div class="lab">Смартфоны<small>от $499</small></div></div>
+<div class="tile t-photo"><img class="bg" src="images/shelf.jpg" alt="Витрина" style="object-position:50% 70%"><div class="ov"></div><div class="lab">Аудио и гаджеты<small>200+ моделей</small></div></div>
+<div class="tile t-stat"><b>10K+</b><span>товаров в наличии</span></div>
+<div class="tile t-stat"><b>12 мес</b><span>гарантия на всё</span></div>
+<div class="tile t-wide"><img class="bg" src="images/airpods.jpg" alt="" style="object-position:50% 40%"><div class="ov"></div><div class="lab">Новинки месяца<small>наушники и аксессуары</small></div></div>
+</div>
+<section id="catalog"><h2>Каталог</h2><p class="sub">Выберите категорию или найдите товар через поиск</p>
+<div class="chips"><button class="on" data-cat="all">Все</button><button data-cat="phone">Смартфоны</button><button data-cat="tablet">Планшеты</button><button data-cat="laptop">Ноутбуки</button><button data-cat="audio">Аудио</button><button data-cat="game">Гейминг</button></div>
+<div class="grid">
+<article class="card" data-cat="phone" data-price="1199"><img src="images/phone-pro.jpg" alt="Смартфон Pro 256 ГБ" loading="lazy"><div class="b"><h3>Смартфон Pro 256 ГБ</h3><ul><li>• Тройная камера</li><li>• OLED 6,3″</li><li>• Титановый корпус</li></ul><div class="row"><div class="price">$1199</div><button class="add" aria-label="В корзину">+</button></div></div></article>
+<article class="card" data-cat="phone" data-price="799"><img src="images/phone-color.jpg" alt="Смартфон 128 ГБ" loading="lazy"><div class="b"><h3>Смартфон 128 ГБ</h3><ul><li>• Яркие цвета</li><li>• Двойная камера</li><li>• Тип-C</li></ul><div class="row"><div class="price">$799<s>$849</s></div><button class="add" aria-label="В корзину">+</button></div></div></article>
+<article class="card" data-cat="tablet" data-price="699"><img src="images/tablet.jpg" alt="Планшет Air 11″" loading="lazy"><div class="b"><h3>Планшет Air 11″</h3><ul><li>• Чип нового поколения</li><li>• Liquid Retina</li><li>• Wi-Fi 6E</li></ul><div class="row"><div class="price">$699</div><button class="add" aria-label="В корзину">+</button></div></div></article>
+<article class="card" data-cat="laptop" data-price="1799"><img src="images/laptop.jpg" alt="Ноутбук Pro 14″" loading="lazy"><div class="b"><h3>Ноутбук Pro 14″</h3><ul><li>• 16 ГБ / 512 ГБ</li><li>• Дисплей mini-LED</li><li>• До 18 ч работы</li></ul><div class="row"><div class="price">$1799<s>$1899</s></div><button class="add" aria-label="В корзину">+</button></div></div></article>
+<article class="card" data-cat="audio" data-price="549"><img src="images/headphones.jpg" alt="Наушники Max" loading="lazy"><div class="b"><h3>Наушники Max</h3><ul><li>• Шумоподавление</li><li>• Пространственный звук</li><li>• 20 ч работы</li></ul><div class="row"><div class="price">$549</div><button class="add" aria-label="В корзину">+</button></div></div></article>
+<article class="card" data-cat="audio" data-price="179"><img src="images/speaker.jpg" alt="Колонка Charge" loading="lazy"><div class="b"><h3>Колонка Charge</h3><ul><li>• Защита от воды</li><li>• До 20 ч звука</li><li>• Bluetooth 5.3</li></ul><div class="row"><div class="price">$179<s>$199</s></div><button class="add" aria-label="В корзину">+</button></div></div></article>
+<article class="card" data-cat="audio" data-price="199"><img src="images/solo.jpg" alt="Наушники Solo Pro" loading="lazy"><div class="b"><h3>Наушники Solo Pro</h3><ul><li>• Активный шум</li><li>• Складной корпус</li><li>• 40 ч работы</li></ul><div class="row"><div class="price">$199</div><button class="add" aria-label="В корзину">+</button></div></div></article>
+<article class="card" data-cat="game" data-price="69"><img src="images/gamepad.jpg" alt="Геймпад беспроводной" loading="lazy"><div class="b"><h3>Геймпад беспроводной</h3><ul><li>• Вибрация</li><li>• Сенсорная панель</li><li>• Тип-C</li></ul><div class="row"><div class="price">$69<s>$79</s></div><button class="add" aria-label="В корзину">+</button></div></div></article>
+</div><div class="empty" id="empty">Ничего не найдено. Попробуйте другой запрос.</div></section>
+<section id="credit"><div class="calc"><div><h2>Рассрочка <span style="color:var(--cyan)">0%</span></h2><p class="sub" style="margin-bottom:0">Рассчитайте ежемесячный платёж</p>
+<label><span>Стоимость товара</span><b id="prv">$800</b></label><input type="range" id="pr" min="100" max="3000" step="50" value="800">
+<label><span>Срок</span></label><div class="mths"><button data-m="3">3</button><button data-m="6">6</button><button class="on" data-m="12">12</button><button data-m="24">24</button></div></div>
+<div class="res"><small>Ваш платёж в месяц</small><b id="out">$67</b><small id="tot"></small><div style="margin-top:16px"><a class="btn" href="#catalog">Выбрать товар</a></div></div></div></section>
+<section id="store"><h2>Наш магазин</h2><p class="sub">Приходите посмотреть и потрогать технику</p>
+<div class="store"><div class="big"><img src="images/store.jpg" alt="Магазин Electronic X"></div>
+<div class="info"><div class="f"><b>📍 Адрес</b><span>г. Бишкек, ул. Примерная, 10, ТЦ</span></div><div class="f"><b>🕙 Часы работы</b><span>Ежедневно 10:00–22:00</span></div><div class="f"><b>🛠 Сервис и обмен</b><span>Trade-in старой техники и диагностика</span></div>
+<div class="mini"><img src="images/store-ad.jpg" alt="" loading="lazy"><img src="images/store-lap.jpg" alt="" loading="lazy"><img src="images/store-acc.jpg" alt="" loading="lazy"></div></div></div></section>
+</main>
+<footer>© 2026 Electronic X · +996 000 000 000 · hello@electronicx.example</footer>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

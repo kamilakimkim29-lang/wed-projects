@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sweet Bakery — пекарня и кондитерская</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header container">
+  <a href="#" class="logo">🥐 Sweet Bakery</a>
+  <nav class="nav"><a href="#menu">Меню</a><a href="#box">Соберите набор</a><a href="#about">О пекарне</a><a href="#delivery">Доставка</a><a href="#contacts">Контакты</a></nav>
+  <button class="cart" aria-label="Корзина">🛍️<b id="cartCount">0</b></button>
+</header>
+
+<section class="hero container">
+  <div class="hero-text">
+    <p class="eyebrow">Свежая выпечка каждое утро</p>
+    <h1>Сладкие моменты, <em>испечённые с любовью</em></h1>
+    <p class="lead">Круассаны, макароны, десерты и капкейки. Всё готовим сами, без полуфабрикатов, и упаковываем в красивую коробку.</p>
+    <div class="actions"><a href="#menu" class="btn">Смотреть меню</a><a href="#box" class="btn ghost">Собрать набор</a></div>
+    <ul class="facts"><li><b>40+</b> десертов</li><li><b>06:00</b> печём</li><li><b>60 мин</b> доставка</li></ul>
+  </div>
+  <div class="hero-img"><img src="images/hero.jpg" alt="Коробка с круассанами и разными начинками"><span class="tag">Хит недели 🍫</span></div>
+</section>
+
+<section class="section container" id="menu">
+  <p class="eyebrow center">Меню</p><h2 class="center">Что сегодня в витрине</h2>
+  <div class="filters" id="filters">
+    <button class="chip active" data-f="all">Все</button><button class="chip" data-f="croissant">Круассаны</button><button class="chip" data-f="macaron">Макароны</button><button class="chip" data-f="dessert">Десерты</button><button class="chip" data-f="cupcake">Капкейки</button>
+  </div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section class="section box" id="box">
+  <div class="container boxin">
+    <div><p class="eyebrow">Конструктор</p><h2>Соберите свой набор</h2><p class="lead">Выберите размер коробки и положите любимые вкусы. Цена одного десерта — 150 ₽.</p>
+      <div class="sizes" id="sizes"><button class="chip active" data-n="4">4 шт.</button><button class="chip" data-n="6">6 шт.</button><button class="chip" data-n="9">9 шт.</button></div></div>
+    <div class="panel">
+      <div id="flavors"></div>
+      <div class="progress"><div id="bar"></div></div>
+      <div class="sum"><span id="status">Выбрано 0 из 4</span><b id="total">0 ₽</b></div>
+      <button class="btn" id="boxBtn" disabled>Заказать набор</button>
+    </div>
+  </div>
+</section>
+
+<section class="section container" id="about">
+  <div class="split">
+    <div class="about-img"><img src="images/baker.jpg" alt="Кондитер украшает капкейки кремом"></div>
+    <div><p class="eyebrow">О пекарне</p><h2>Всё делаем руками, пока вы спите</h2>
+      <p class="lead">Наши кондитеры выходят на кухню ещё до рассвета. Крем взбиваем перед подачей, тесто раскатываем вручную, а в каждую коробку кладём записку с советом, как лучше подать десерт.</p>
+      <ul class="ticks"><li>Только натуральное масло и сливки</li><li>Десерты на заказ к любому празднику</li><li>Бесплатная открытка к подарочной коробке</li></ul></div>
+  </div>
+</section>
+
+<section class="gallery">
+  <img src="images/cakes.jpg" alt="Витрина с тортами и пирожными">
+  <div class="gallery-in container"><h2>Торты на заказ</h2><p>Праздничные торты от 1 кг. Заказывайте за 2 дня.</p><a href="#contacts" class="btn light">Оставить заявку</a></div>
+</section>
+
+<section class="section container" id="delivery">
+  <p class="eyebrow center">Доставка</p><h2 class="center">Свежее — прямо к вам</h2>
+  <div class="steps">
+    <article><span>1</span><h3>Выбираете</h3><p>Добавляете десерты в корзину</p></article>
+    <article><span>2</span><h3>Мы печём</h3><p>Собираем заказ из свежей выпечки</p></article>
+    <article><span>3</span><h3>Привозим</h3><p>Доставляем за 60 минут по городу</p></article>
+  </div>
+</section>
+
+<footer class="footer" id="contacts">
+  <div class="container fgrid">
+    <div><a href="#" class="logo">🥐 Sweet Bakery</a><p>Пекарня и кондитерская. Печём с любовью.</p></div>
+    <div><h4>Меню</h4><a href="#menu">Меню</a><a href="#box">Соберите набор</a><a href="#about">О пекарне</a></div>
+    <div><h4>Контакты</h4><a href="#">+7 900 000-00-00</a><a href="#">hello@sweetbakery.example</a><a href="#">Ежедневно 08:00–21:00</a></div>
+  </div>
+  <p class="copy container">© 2026 Sweet Bakery | Все права защищены</p>
+</footer>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

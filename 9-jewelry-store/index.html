@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumière — ювелирный дом</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header container">
+  <a href="#" class="logo">Lumière<span>ювелирный дом</span></a>
+  <nav class="nav"><a href="#catalog">Каталог</a><a href="#collections">Коллекции</a><a href="#size">Размер кольца</a><a href="#about">О нас</a><a href="#contacts">Контакты</a></nav>
+  <button class="cart" id="cart" aria-label="Корзина">💎<b id="cartCount">0</b></button>
+</header>
+
+<section class="hero container">
+  <div class="hero-text">
+    <p class="eyebrow">Бриллианты и фианиты ручной огранки</p>
+    <h1>Блеск, который <em>остаётся навсегда</em></h1>
+    <p class="lead">Помолвочные кольца, колье и украшения на торжество. Сертификат подлинности и пожизненное обслуживание.</p>
+    <div class="actions"><a href="#catalog" class="btn">Смотреть украшения</a><a href="#size" class="btn ghost">Узнать размер</a></div>
+    <ul class="facts"><li><b>15</b> лет опыта</li><li><b>2 400+</b> украшений</li><li><b>100%</b> сертификаты</li></ul>
+  </div>
+  <div class="hero-img"><img src="images/hero.jpg" alt="Кольца с крупными камнями и колье"><span class="tag">Новая коллекция ✦</span></div>
+</section>
+
+<section class="section container" id="catalog">
+  <p class="eyebrow center">Каталог</p><h2 class="center">Избранные украшения</h2>
+  <div class="bar">
+    <div class="filters" id="filters">
+      <button class="chip active" data-f="all">Все</button><button class="chip" data-f="rings">Кольца</button><button class="chip" data-f="necklaces">Колье</button><button class="chip" data-f="earrings">Серьги</button><button class="chip" data-f="sets">Наборы</button>
+    </div>
+    <label class="sort">Сортировка
+      <select id="sort"><option value="def">По умолчанию</option><option value="asc">Сначала дешевле</option><option value="desc">Сначала дороже</option></select>
+    </label>
+  </div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section class="section dark" id="collections">
+  <div class="container">
+    <p class="eyebrow center">Коллекции</p><h2 class="center light">Для каждого события</h2>
+    <div class="cols">
+      <article><img src="images/hero.jpg" alt="" style="object-position:50% 70%"><h3>Помолвка</h3><p>Кольца с центральным камнем</p></article>
+      <article><img src="images/set.jpg" alt="" style="object-position:50% 30%"><h3>Вечерние</h3><p>Колье и серьги для торжества</p></article>
+      <article><img src="images/display.jpg" alt="" style="object-position:50% 60%"><h3>Подарочные</h3><p>Украшения в фирменной коробке</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section container" id="size">
+  <div class="sizebox">
+    <div><p class="eyebrow">Помощник</p><h2>Какой у вас размер кольца?</h2><p class="lead">Обмотайте палец ниткой, измерьте длину в миллиметрах и введите значение.</p></div>
+    <div class="calc">
+      <label for="circ">Длина окружности пальца, мм</label>
+      <input id="circ" type="number" min="40" max="80" step="0.5" placeholder="например, 54">
+      <div class="out" id="sizeOut">Размер появится здесь</div>
+    </div>
+  </div>
+</section>
+
+<section class="section container split" id="about">
+  <div class="about-img"><img src="images/hall.jpg" alt="Зал ювелирного салона с витринами"></div>
+  <div><p class="eyebrow">О нас</p><h2>Салон, где каждое украшение — событие</h2>
+    <p class="lead">Lumière — это просторный салон с витринами из стекла и мрамора. Наши консультанты подберут украшение под повод, бюджет и стиль, а мастера выполнят гравировку и подгонят размер в день покупки.</p>
+    <ul class="ticks"><li>Сертификат подлинности на каждое изделие</li><li>Бесплатная подгонка размера</li><li>Рассрочка без переплаты</li></ul></div>
+</section>
+
+<section class="section container">
+  <p class="eyebrow center">Сервис</p><h2 class="center">Уверенность в покупке</h2>
+  <div class="services">
+    <article><span>📜</span><h3>Сертификат</h3><p>Подтверждение подлинности и характеристик</p></article>
+    <article><span>✍️</span><h3>Гравировка</h3><p>Имя или дата — бесплатно в день заказа</p></article>
+    <article><span>💳</span><h3>Рассрочка</h3><p>До 12 месяцев без переплаты</p></article>
+    <article><span>🛡️</span><h3>Гарантия</h3><p>Пожизненное обслуживание украшений</p></article>
+  </div>
+</section>
+
+<footer class="footer" id="contacts">
+  <div class="container fgrid">
+    <div><a href="#" class="logo">Lumière<span>ювелирный дом</span></a><p>Украшения, которые становятся семейной историей.</p></div>
+    <div><h4>Меню</h4><a href="#catalog">Каталог</a><a href="#collections">Коллекции</a><a href="#size">Размер кольца</a></div>
+    <div><h4>Контакты</h4><a href="#">+7 900 000-00-00</a><a href="#">info@lumiere.example</a><a href="#">Ежедневно 10:00–20:00</a></div>
+  </div>
+  <p class="copy container">© 2026 Lumière | Все права защищены</p>
+</footer>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

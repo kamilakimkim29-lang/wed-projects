@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NOIR — модельное агентство</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header container">
+  <a href="#" class="logo">NOIR<span>model agency</span></a>
+  <nav class="nav"><a href="#services">Направления</a><a href="#gallery">За кадром</a><a href="#steps">Как попасть</a><a href="#faq">Вопросы</a><a href="#apply" class="pill">Подать заявку</a></nav>
+</header>
+
+<section class="hero container">
+  <div class="hero-text">
+    <p class="eyebrow">Модельное агентство полного цикла</p>
+    <h1>Ваш выход <em>начинается здесь</em></h1>
+    <p class="lead">Подиумы, съёмки для брендов и рекламные кампании. Находим таланты, обучаем и ведём карьеру от первого кастинга.</p>
+    <div class="actions"><a href="#apply" class="btn">Пройти кастинг</a><a href="#services" class="btn ghost">Направления</a></div>
+  </div>
+  <div class="hero-img"><img src="images/runway.jpg" alt="Показ мод: модели на подиуме"><span class="tag">Сезон 2026</span></div>
+</section>
+
+<section class="stats container">
+  <div><b data-to="12">0</b><span>лет на рынке</span></div>
+  <div><b data-to="350">0</b><span>моделей в базе</span></div>
+  <div><b data-to="80">0</b><span>брендов-партнёров</span></div>
+  <div><b data-to="40">0</b><span>показов в год</span></div>
+</section>
+
+<section class="section container" id="services">
+  <p class="eyebrow">Направления</p><h2>Чем мы занимаемся</h2>
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-t="runway">Подиум</button><button class="tab" data-t="photo">Фотосъёмки</button><button class="tab" data-t="ads">Реклама</button><button class="tab" data-t="cast">Кастинги</button>
+  </div>
+  <div class="tabpanel" id="panel"></div>
+</section>
+
+<section class="section container" id="gallery">
+  <p class="eyebrow">За кадром</p><h2>Как проходят наши съёмки</h2>
+  <div class="mosaic">
+    <figure class="m1"><img src="images/studio.jpg" alt="Студийная съёмка с софтбоксами"><figcaption>Студийная съёмка</figcaption></figure>
+    <figure class="m2"><img src="images/set.jpg" alt="Команда за мониторами на съёмке"><figcaption>Рабочая площадка</figcaption></figure>
+    <figure class="m3"><img src="images/team.jpg" alt="Фотограф и команда в студии"><figcaption>Команда на площадке</figcaption></figure>
+  </div>
+</section>
+
+<section class="section container" id="steps">
+  <p class="eyebrow">Как попасть к нам</p><h2>Четыре шага до контракта</h2>
+  <div class="steps">
+    <article><span>01</span><h3>Заявка</h3><p>Заполните форму и отправьте фото без макияжа</p></article>
+    <article><span>02</span><h3>Кастинг</h3><p>Приглашаем на личную встречу и тестовую съёмку</p></article>
+    <article><span>03</span><h3>Обучение</h3><p>Школа подиума, позирования и работы с камерой</p></article>
+    <article><span>04</span><h3>Контракт</h3><p>Подписываем договор и подбираем первые проекты</p></article>
+  </div>
+</section>
+
+<section class="section container" id="faq">
+  <p class="eyebrow">Вопросы</p><h2>Частые вопросы</h2>
+  <div class="faq">
+    <details><summary>Нужен ли опыт?</summary><p>Нет. Мы берём новые лица и обучаем в своей школе. Главное — желание и дисциплина.</p></details>
+    <details><summary>Какие требования к росту?</summary><p>Для подиума обычно от 172 см у девушек и от 182 см у парней. Для коммерческих съёмок рост не ограничен.</p></details>
+    <details><summary>Сколько стоит участие?</summary><p>Кастинг бесплатный. Агентство зарабатывает процент с оплаченных проектов, а не с моделей за вход.</p></details>
+    <details><summary>Как быстро будет ответ?</summary><p>Рассматриваем заявки в течение трёх рабочих дней и связываемся по телефону.</p></details>
+  </div>
+</section>
+
+<section class="section container" id="apply">
+  <div class="apply">
+    <div><p class="eyebrow">Заявка на кастинг</p><h2>Расскажите о себе</h2><p class="lead">Оставьте контакты, и менеджер свяжется с вами, чтобы назначить встречу.</p></div>
+    <form id="form" novalidate>
+      <label>Имя<input id="name" type="text" placeholder="Анна" autocomplete="name"></label>
+      <label>Телефон<input id="phone" type="tel" placeholder="+7 900 000-00-00" autocomplete="tel"></label>
+      <div class="two">
+        <label>Рост, см<input id="height" type="number" min="140" max="210" placeholder="175"></label>
+        <label>Город<input id="city" type="text" placeholder="Ваш город"></label>
+      </div>
+      <button class="btn" type="submit">Отправить заявку</button>
+      <p class="hint" id="hint"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container fgrid">
+    <div><a href="#" class="logo">NOIR<span>model agency</span></a><p>Агентство, которое открывает новые имена.</p></div>
+    <div><h4>Разделы</h4><a href="#services">Направления</a><a href="#steps">Как попасть</a><a href="#apply">Заявка</a></div>
+    <div><h4>Контакты</h4><a href="#">+7 900 000-00-00</a><a href="#">cast@noir.example</a><a href="#">Пн–Сб 10:00–19:00</a></div>
+  </div>
+  <p class="copy container">© 2026 NOIR | Все права защищены</p>
+</footer>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

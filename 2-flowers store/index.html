@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>4 Flowers Store — цветы и букеты</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="logo" href="#"><b>4</b> Flowers</a>
+<nav><a href="#cat">Категории</a><a href="#shop">Букеты</a><a href="#about">О нас</a><a href="#reviews">Отзывы</a></nav>
+<button class="btn sm" id="cart">🛒 0 · $0</button>
+</header>
+<div class="hero">
+<div>
+<div class="eyebrow">Цветочный магазин</div>
+<h1>Цветы, которые говорят <em>за вас</em></h1>
+<p>Свежие букеты, корзины и композиции ручной работы. Соберём по вашему поводу и доставим за час.</p>
+<div class="cta"><a class="btn" href="#shop">Выбрать букет</a><a class="t" href="#about">О магазине ▸</a></div>
+</div>
+<div class="pics"><img class="main" src="images/basket.jpg" alt="Корзина с гортензиями и розами"><img class="small" src="images/b3.jpg" alt="Букет"><div class="float">🚚 Доставка <span>за 60 минут</span></div></div>
+</div>
+</div>
+<div class="wrap">
+<section id="cat" class="center"><div class="eyebrow">Что выбирают чаще</div><h2>Популярные категории</h2>
+<div class="cats">
+<div class="cat"><img src="images/b1.jpg" alt=""><h3>Букеты</h3><small>120 вариантов</small></div>
+<div class="cat"><img src="images/k1.jpg" alt=""><h3>Корзины</h3><small>24 композиции</small></div>
+<div class="cat"><img src="images/b5.jpg" alt=""><h3>Розы</h3><small>40 сортов</small></div>
+<div class="cat"><img src="images/bag.jpg" alt=""><h3>Подарочные сумки</h3><small>16 вариантов</small></div>
+</div></section>
+<section id="shop"><div class="head"><div><div class="eyebrow">Наши работы</div><h2>Букеты недели</h2></div>
+<div class="arrows"><button id="prev" aria-label="Назад">‹</button><button id="next" aria-label="Вперёд">›</button></div></div>
+<div class="track" id="track">
+<div class="card"><span class="badge">ХИТ</span><img src="images/b1.jpg" alt="Нежность" loading="lazy"><h3>Нежность</h3><p>Гидрангеи и розы</p><div class="pr"><div><sup>$</sup>65</div><button class="add" data-price="65">В корзину</button></div></div>
+<div class="card"><span class="badge">NEW</span><img src="images/b2.jpg" alt="Лавандовый сон" loading="lazy"><h3>Лавандовый сон</h3><p>Хризантемы и розы</p><div class="pr"><div><sup>$</sup>58</div><button class="add" data-price="58">В корзину</button></div></div>
+<div class="card"><span class="badge">ХИТ</span><img src="images/b3.jpg" alt="Розовая мечта" loading="lazy"><h3>Розовая мечта</h3><p>Пионовидные розы</p><div class="pr"><div><sup>$</sup>72</div><button class="add" data-price="72">В корзину</button></div></div>
+<div class="card"><span class="badge">NEW</span><img src="images/b4.jpg" alt="Утренний рассвет" loading="lazy"><h3>Утренний рассвет</h3><p>Гортензии, альстромерии</p><div class="pr"><div><sup>$</sup>60</div><button class="add" data-price="60">В корзину</button></div></div>
+<div class="card"><span class="badge">-10%</span><img src="images/b5.jpg" alt="Огонь страсти" loading="lazy"><h3>Огонь страсти</h3><p>Красные розы</p><div class="pr"><div><sup>$</sup>69</div><button class="add" data-price="69">В корзину</button></div></div>
+<div class="card"><span class="badge">NEW</span><img src="images/b6.jpg" alt="Белое облако" loading="lazy"><h3>Белое облако</h3><p>Белые розы и гортензии</p><div class="pr"><div><sup>$</sup>64</div><button class="add" data-price="64">В корзину</button></div></div>
+<div class="card"><span class="badge">ХИТ</span><img src="images/b7.jpg" alt="Малиновый вечер" loading="lazy"><h3>Малиновый вечер</h3><p>Розы и хризантемы</p><div class="pr"><div><sup>$</sup>75</div><button class="add" data-price="75">В корзину</button></div></div>
+<div class="card"><span class="badge">NEW</span><img src="images/b8.jpg" alt="Небесный" loading="lazy"><h3>Небесный</h3><p>Розы в голубой упаковке</p><div class="pr"><div><sup>$</sup>62</div><button class="add" data-price="62">В корзину</button></div></div>
+<div class="card"><span class="badge">ХИТ</span><img src="images/k1.jpg" alt="Корзина с розами" loading="lazy"><h3>Корзина с розами</h3><p>Цветы в плетёной корзине</p><div class="pr"><div><sup>$</sup>85</div><button class="add" data-price="85">В корзину</button></div></div>
+<div class="card"><span class="badge">-15%</span><img src="images/k2.jpg" alt="Розовые ромашки" loading="lazy"><h3>Розовые ромашки</h3><p>Композиция в коробке</p><div class="pr"><div><sup>$</sup>48</div><button class="add" data-price="48">В корзину</button></div></div>
+</div></section>
+<section id="about"><div class="about">
+<img src="images/shop.jpg" alt="Витрина магазина">
+<div><div class="eyebrow">О магазине</div><h2>Каждый букет собираем <em>с душой</em></h2>
+<p>4 Flowers Store работает со свежими поставками и собирает букеты вручную: от нежных гортензий до ярких роз. Подберём состав под бюджет и повод.</p>
+<div class="feat"><div><b>🌸 Всегда свежие цветы</b><span>Поставки каждую неделю, контроль качества</span></div><div><b>🎀 Красивая упаковка</b><span>Бумага, ленты и подарочные сумки</span></div><div><b>🚚 Быстрая доставка</b><span>От 60 минут по городу</span></div></div></div>
+</div></section>
+<section><div class="band"><h2>Нам доверяют тысячи клиентов</h2>
+<div class="nums"><div><b>15K</b><span>Букетов в год</span></div><div><b>120+</b><span>Композиций</span></div><div><b>60</b><span>Минут доставка</span></div><div><b>4.9</b><span>Рейтинг</span></div></div></div></section>
+<section id="reviews" class="center"><div class="eyebrow">Отзывы</div><h2>Что говорят клиенты</h2>
+<div class="quote"><p>«Заказала корзину на юбилей мамы: свежайшие цветы, красивая упаковка, привезли вовремя. Спасибо!»</p><b>★ 4.9</b> (3.2k отзывов)</div></section>
+</div>
+<footer>© 2026 4 Flowers Store · +996 000 000 000 · hello@4flowers.example</footer>
+<script src="script.js"></script>
+</body>
+</html>

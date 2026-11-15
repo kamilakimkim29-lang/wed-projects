@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book Space — книжный магазин</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header container">
+  <a href="#" class="logo">📖 Book Space</a>
+  <nav class="nav"><a href="#catalog">Каталог</a><a href="#month">Книга месяца</a><a href="#about">О магазине</a><a href="#news">Рассылка</a><a href="#contacts">Контакты</a></nav>
+  <button class="cart" aria-label="Корзина">🛒<b id="cartCount">0</b></button>
+</header>
+
+<section class="hero container">
+  <div class="hero-text">
+    <p class="eyebrow">Книжный магазин и читальный зал</p>
+    <h1>Найдите книгу, которая <em>ждёт именно вас</em></h1>
+    <p class="lead">Фэнтези, романтика и мировая классика на одной полке. Уютные залы, кофе и консультанты, которые читали всё.</p>
+    <div class="actions"><a href="#catalog" class="btn">Открыть каталог</a><a href="#month" class="btn ghost">Книга месяца</a></div>
+    <ul class="facts"><li><b>12 000</b> книг</li><li><b>40+</b> жанров</li><li><b>5 дн.</b> доставка</li></ul>
+  </div>
+  <div class="hero-img"><img src="images/hero.jpg" alt="Книжный магазин со стеклянным потолком"><span class="tag">Новинки недели 📚</span></div>
+</section>
+
+<section class="section container" id="catalog">
+  <p class="eyebrow center">Каталог</p><h2 class="center">Что читают сейчас</h2>
+  <div class="bar">
+    <div class="filters" id="filters">
+      <button class="chip active" data-f="all">Все</button><button class="chip" data-f="fantasy">Фэнтези</button><button class="chip" data-f="romance">Романтика</button><button class="chip" data-f="classic">Классика</button>
+    </div>
+    <input id="search" class="search" type="search" placeholder="Поиск по названию или автору" aria-label="Поиск">
+  </div>
+  <div class="grid" id="grid"></div>
+  <p class="empty" id="empty" hidden>Ничего не нашлось. Попробуйте другой запрос.</p>
+</section>
+
+<section class="section month" id="month">
+  <div class="container split">
+    <div class="month-img"><img src="images/month.jpg" alt="Трилогия Cynthia Hand в твёрдых обложках"></div>
+    <div><p class="eyebrow">Книга месяца</p><h2>Трилогия, в которую невозможно не влюбиться</h2>
+      <p class="lead">Ангелы, выбор и первая любовь. Cynthia Hand — Unearthly, Hallowed и Boundless в коллекционных изданиях. Берите весь комплект со скидкой.</p>
+      <p class="deal"><span>12 900 ₽</span> <s>15 600 ₽</s></p>
+      <button class="btn" id="monthBtn">Добавить комплект</button></div>
+  </div>
+</section>
+
+<section class="section container" id="about">
+  <div class="split rev">
+    <div><p class="eyebrow">О магазине</p><h2>Тихое место среди города</h2>
+      <p class="lead">Высокие стеллажи, тёплый свет и читальные уголки. У нас можно часами выбирать книгу, а потом сразу начать читать за чашкой кофе.</p>
+      <ul class="ticks"><li>Бесплатная упаковка подарков</li><li>Предзаказ новинок и зарубежных изданий</li><li>Клуб читателей по субботам</li></ul></div>
+    <div class="about-img"><img src="images/shelf.jpg" alt="Стеллажи с подсветкой"></div>
+  </div>
+</section>
+
+<section class="banner">
+  <img src="images/classics.jpg" alt="">
+  <div class="banner-in container"><h2>Вечная классика</h2><p>Достоевский, Толстой, Ремарк, Оруэлл — в серии карманных изданий.</p><a href="#catalog" class="btn light" id="toClassic">Смотреть классику</a></div>
+</section>
+
+<section class="section container" id="news">
+  <div class="newsbox">
+    <div><h2>Узнавайте о новинках первыми</h2><p class="lead">Раз в неделю присылаем подборку книг и промокод на 10%.</p></div>
+    <form id="newsForm" novalidate>
+      <input id="email" type="email" placeholder="Ваш e-mail" aria-label="E-mail" required>
+      <button class="btn" type="submit">Подписаться</button>
+      <p class="hint" id="hint"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer" id="contacts">
+  <div class="container fgrid">
+    <div><a href="#" class="logo">📖 Book Space</a><p>Место, где книги находят своих читателей.</p></div>
+    <div><h4>Меню</h4><a href="#catalog">Каталог</a><a href="#month">Книга месяца</a><a href="#about">О магазине</a></div>
+    <div><h4>Контакты</h4><a href="#">+7 900 000-00-00</a><a href="#">hello@bookspace.example</a><a href="#">Ежедневно 10:00–22:00</a></div>
+  </div>
+  <p class="copy container">© 2026 Book Space | Все права защищены</p>
+</footer>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rosalie — парфюмерный бутик</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header container">
+  <a href="#" class="logo">Rosalie<span>парфюмерный бутик</span></a>
+  <nav class="nav"><a href="#catalog">Каталог</a><a href="#finder">Подбор аромата</a><a href="#about">О бутике</a><a href="#services">Сервис</a><a href="#contacts">Контакты</a></nav>
+  <button class="cart" id="cart" aria-label="Корзина">🛍<b id="cartCount">0</b></button>
+</header>
+
+<section class="hero container">
+  <div class="hero-text">
+    <p class="eyebrow">Нишевая и классическая парфюмерия</p>
+    <h1>Аромат, который <em>говорит за вас</em></h1>
+    <p class="lead">Более 300 ароматов, личная консультация и подарочная упаковка бесплатно. Найдём ваш — по настроению, нотам или случаю.</p>
+    <div class="actions"><a href="#catalog" class="btn">Смотреть каталог</a><a href="#finder" class="btn ghost">Подобрать аромат</a></div>
+    <ul class="facts"><li><b>300+</b> ароматов</li><li><b>12</b> лет на рынке</li><li><b>24 ч</b> доставка</li></ul>
+  </div>
+  <div class="hero-img"><img src="images/hero.jpg" alt="Интерьер парфюмерного бутика"><span class="tag">Новая коллекция ✿</span></div>
+</section>
+
+<section class="section container" id="catalog">
+  <p class="eyebrow center">Каталог</p><h2 class="center">Любимые ароматы гостей</h2>
+  <div class="filters" id="filters">
+    <button class="chip active" data-f="all">Все</button><button class="chip" data-f="women">Женские</button><button class="chip" data-f="unisex">Унисекс</button><button class="chip" data-f="gift">Для подарка</button>
+  </div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section class="section finder" id="finder">
+  <div class="container finder-in">
+    <div><p class="eyebrow">Подбор аромата</p><h2>Какое у вас настроение?</h2><p class="lead">Выберите — и мы предложим аромат из каталога.</p>
+      <div class="moods" id="moods">
+        <button data-m="soft">🌸 Нежное</button><button data-m="bright">☀️ Яркое</button><button data-m="mystic">🖤 Загадочное</button><button data-m="warm">🍂 Тёплое</button>
+      </div></div>
+    <div class="result" id="result"><p class="muted">Ваш аромат появится здесь</p></div>
+  </div>
+</section>
+
+<section class="section container split" id="about">
+  <div class="about-img"><img src="images/shop.jpg" alt="Витрина бутика с цветочным декором"></div>
+  <div><p class="eyebrow">О бутике</p><h2>Пространство, где аромат — это история</h2>
+    <p class="lead">Rosalie — это светлый бутик с живыми композициями и консультантами, которые не торопят. Мы работаем с домами классической и нишевой парфюмерии и привозим только оригинальную продукцию.</p>
+    <ul class="ticks"><li>Только оригинальная продукция</li><li>Пробники перед покупкой</li><li>Персональная подборка за 10 минут</li></ul></div>
+</section>
+
+<section class="section container" id="services">
+  <p class="eyebrow center">Сервис</p><h2 class="center">Заботимся о каждой детали</h2>
+  <div class="services">
+    <article><span>🎀</span><h3>Подарочная упаковка</h3><p>Бесплатно, с открыткой от вас</p></article>
+    <article><span>🧪</span><h3>Пробники</h3><p>Попробуйте дома до покупки флакона</p></article>
+    <article><span>🛵</span><h3>Быстрая доставка</h3><p>Привезём за сутки по городу</p></article>
+    <article><span>💬</span><h3>Консультация</h3><p>Поможем выбрать лично или онлайн</p></article>
+  </div>
+</section>
+
+<footer class="footer" id="contacts">
+  <div class="container fgrid">
+    <div><a href="#" class="logo">Rosalie<span>парфюмерный бутик</span></a><p>Найдите аромат, который останется с вами.</p></div>
+    <div><h4>Меню</h4><a href="#catalog">Каталог</a><a href="#finder">Подбор аромата</a><a href="#about">О бутике</a></div>
+    <div><h4>Контакты</h4><a href="#">+7 900 000-00-00</a><a href="#">hello@rosalie.example</a><a href="#">Ежедневно 10:00–21:00</a></div>
+  </div>
+  <p class="copy container">© 2026 Rosalie | Все права защищены</p>
+</footer>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
